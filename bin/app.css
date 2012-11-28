@@ -1,0 +1,299 @@
+body{
+	font-family: Verdana, Arial;
+	font-size: 14pt;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: auto;
+}
+
+.hideelt { display: none; }
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    overflow: hidden;
+}
+.popup-container{
+    left: 240px;
+    top: 210px;
+	height:268px;
+	width:575px;
+    position: absolute;
+}
+
+.nav-container{
+	transition: opacity step-end 3s;
+    -moz-transition: opacity  step-end   3s; /* Firefox 4 */
+    -webkit-transition: opacity  step-end   3s; /* Safari and Chrome */
+    -o-transition: opacity  step-end   3s; /* Opera */
+}
+
+.nav-container-show-start{
+	opacity:0;
+}
+
+.nav-container-show-end{
+	opacity:1;
+}
+
+.hide-popup{
+	opacity:0.0;
+}
+.show-popup{
+   opacity:1.0;
+}
+
+.popup1 {
+    position: absolute;
+    background-color: lightgrey;
+    z-index: 9999;
+}
+.gen_src0_popin { 
+   position: absolute;
+   width:575px;
+   transition: opacity linear .5s ;
+    -moz-transition: opacity linear .5s ; /* Firefox 4 */
+    -webkit-transition: opacity linear .5s ; /* Safari and Chrome */
+    -o-transition: opacity linear .5s ; /* Opera */
+   background-image:url('assets/gen_src0_popin.png');
+   background-repeat: no-repeat;
+   z-index: 9999;
+   
+}
+
+.gen_info_popin { 
+   background-color:#FFFFFF;
+   width:100%;
+   height:100%;
+   z-index: 9999;
+   
+}
+
+.page0 {
+    height: 250px;
+    vertical-align: middle;
+}
+.page0 li{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    left: 10px;
+}
+.LinkClosePage{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.email-form-text-input{
+    width: 100%;
+    display: block;
+}
+.email-form-error-message{
+    background-color: red;
+}
+.email-form-success-message{
+    color: green;
+}
+
+.SoundOn, .SoundOff{
+    position: absolute;
+    right: 80px;
+	bottom: 5px;
+    z-index: 10;
+}
+
+
+
+.page2-3{
+    z-index: 9;
+}
+.Page{
+    display: none;
+}
+.LinkToPage{
+    position: absolute;
+    z-index: 20;
+}
+.LinkToContext{
+    position: static;
+    z-index: 20;
+}
+.Layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.rabbit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+
+.story{
+	display:none;
+}
+
+.Layer object{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}
+.homeBtn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+    width:15px;
+    height:15px;
+}
+
+.homeBtn img{
+    width:30px;
+    height:52px;
+}
+
+.homeBtnFinal{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.homeBtnFinal img{
+    width:100px;
+	height:100px;
+}
+
+.finalBtnWolf {
+   position: absolute;
+   top: 210px;
+   left: 80px;
+   z-index: 10;
+}
+.finalBtnPrin {
+   position: absolute;
+   top: 260px;
+   left: 300px;
+   z-index: 10;
+}
+.finalBtnDrag {
+   position: absolute;
+   top: 310px;
+   left: 480px;
+   z-index: 10;
+}
+
+.choose_book_wolf {
+   position: absolute;
+   top: 160px;
+   left: 680px;
+   z-index: 10;
+}
+
+.choose_book_prin {
+   position: absolute;
+   top: 340px;
+   left: 680px;
+   z-index: 10;
+}
+
+.choose_book_drag {
+   position: absolute;
+   top: 520px;
+   left: 680px;
+   z-index: 10;
+}
+
+.next{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index: 10;
+}
+.previous{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    z-index: 10;
+}
+.page-nodelay{
+    transition: left ease-out 1s ;
+    -moz-transition: left ease-out 1s ; /* Firefox 4 */
+    -webkit-transition: left ease-out 1s ; /* Safari and Chrome */
+    -o-transition: left ease-out 1s ; /* Opera */
+}
+.page-delay{
+    transition: left step-end  3s;
+    -moz-transition: left  step-end   3s; /* Firefox 4 */
+    -webkit-transition: left  step-end   3s; /* Safari and Chrome */
+    -o-transition: left  step-end   3s; /* Opera */
+}
+
+.color-buttons{
+	transition: opacity step-end 18s;
+    -moz-transition: opacity  step-end   18s; /* Firefox 4 */
+    -webkit-transition: opacity  step-end   18s; /* Safari and Chrome */
+    -o-transition: opacity  step-end   18s; /* Opera */
+}
+
+.color-button-show-end{
+    opacity:1;
+}
+
+.color-button-show-start{
+	opacity:0;
+    
+}
+.page-right, .page-left, .page-center{
+    position:absolute;
+}
+.page-left{
+    left: -100%;
+	z-index:1000;
+}
+.page-right{
+    left: 100%;
+}
+.page-center{
+    left: 0px;
+	z-index:1000;
+}
+
+.popupHistoire {
+   position: absolute;
+   right: 10px;
+   top: 0;
+   z-index: 10;
+}
+
+.gen_src0 {
+   width: 100%;
+   height: 100%;
+   background-image:url('assets/gen_scr0.png');
+   background-position: center;
+   background-size: contain;
+}
+
+.gen_src1 ul {
+   position: absolute;
+   right: 80px;
+   top: 160px;
+   z-index: 10;
+}
+.gen_src1 ul li {
+   list-style-type:none;
+   margin:0 0 65px 0;
+}
+
+.gen_src1 ul a {
+  position:static;
+}

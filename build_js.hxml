@@ -1,0 +1,10 @@
+-js bin/Brix.js
+-cp ../Cocktail/src/
+-cp ../Brix/src/
+-cp src/
+-debug
+-main brix.core.Application
+--macro brix.core.Builder.create('src/index.html')
+-D brixdebug
+-D disableEmbedHtml
+-D stopOnError
